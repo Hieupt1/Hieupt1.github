@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ITBooks</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/Logo 2.png">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../other source/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- font-awseome -->
+    <link rel="stylesheet" href="../../other source/fontawesome-free-5.0.6/on-server/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../../other source/animate.css">
+    <!-- gg font -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+    <!-- HEAD CONTAINER (BELOW) -->
+    <div class="container">
+
+        
+        <!-- Logo (below) -->
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <p id="slogon">Sách hay cũng như bạn tốt!</p>
+            </div>
+
+            <div id="Logo" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <a href="../../index.html"><img src="../../images/Logo.png" alt=""></a>
+            </div>
+
+            <div id="login_form" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
+                <div>
+                    <p class="logout"> Log out <i class="fas fa-sign-out-alt"></i></p>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+        <!-- Logo (above) -->
+
+        <!-- Menu (below)-->
+        <div class="row">
+
+            <nav class="topnav" id="myTopnav">
+
+                <!-- Open -->
+                <a id="home" href="#"><img src="../../images/Logo 2.png" alt=""></a>
+
+                <!-- Open -->
+
+                <a href="../../index.html">ITBooks Management</a>
+
+                <!-- user icon -->
+                <button class="userIcon" style=" color:Tomato">
+                    <i class="fas fa-user"></i>
+                </button>
+
+                <button class="userIcon" style=" color:Tomato">
+                    <i class="fas fa-bell"></i>
+                </button>
+
+                <button class="userIcon" style=" color:Tomato">
+                    <i class="fas fa-envelope"></i>
+                </button>
+
+
+                <!-- search input -->
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- menu icon -->
+                <a href="javascript:void(0);" class="icon" onclick="menu()">&#9776;</a>
+            </nav>
+
+        </div>
+
+        <!-- Menu (above) -->
+    
+    </div>
+
+    <!-- HEAD CONTAINER (ABOBE) -->
+
+    <!-- MAIN CONTAINER (BELOW)) -->
+    <div class="container" style="border: 0.1px #f2f2f2 solid">
+
+
+        <!-- MAIN ROW (BELOW) -->
+        <div class="row">
+            
+            <!-- Sidebar(below) -->
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 admin">
+                
+                <div id="book_menu">
+                    <i class="fa fa-bars"></i> DANH MỤC QUẢN LÝ
+                </div>
+
+                <ul class="adminMenu">
+                    <a href="#"> <li> <i class="fas fa-tachometer-alt"></i> Dashboard </li></a>
+                    <a href="../../html/BookMng/BookMng.html"><li><i class="fas fa-book"></i>  Quản lý sách</li></a>     
+                    <a href="../../html/CategoryBookMng/CategoryBookMng.html"><li><i class="fas fa-folder"></i>  Quản lý danh mục sách</li> </a> 
+                    <a href="../../html/AuthorMng/AuthorMng.html"><li><i class="fas fa-pencil-alt"></i>  Quản lý tác giả</li> </a>  
+                    <a href="../../html/PublisherMng/PublisherMng.html"><li><i class="far fa-newspaper"></i>  Quản lý nhà xuất bản</li> </a> 
+                </ul>
+                
+
+            </div>
+            <!-- Sidebar(above) -->
+
+            <!-- Book sepatated (below) -->
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                
+                <!-- NAME -->
+                <div id="new_book">
+                    <a href="">QUẢN LÝ DANH MỤC SÁCH</a>
+                </div>
+
+                <form class="formBook" action="">
+                                 
+
+                    <!-- name -->
+                    <div class="row">  
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <label for="title">Tên category (Category Nane)</label>
+                        </div>   
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" id="Title"> <br>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p id="TitleError">Hãy điền tiêu đề category</p>
+                        </div>
+                    </div>
+                    <!-- sammury -->
+                    <div class="row">  
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <label for="Summary">Mô tả (Summary) </label> 
+                        </div>   
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <textarea id="Summary" rows="2" cols="32">
+
+                            </textarea> 
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p id="SummaryError">Hãy điền mô tả cho Category</p>
+                        </div>
+                    </div>
+                    
+                </form>
+
+                <!-- Add Button -->
+                <button class="addCategory" type="button">Thêm danh mục </button>
+                
+
+           
+         </div>
+
+         <!-- MAIN ROW (ABOVE) -->
+
+    </div>
+    
+    <!-- MAIN CONTAINER (ABOVE) -->
+
+
+    
+
+
+    <!-- FOOTER CONTAINER (BELOW) -->
+
+    <div class="container">
+
+        <div class="row permistion">
+            
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        
+                <p><i class="fas fa-exchange-alt"></i>  Đổi trả trong 15 ngày</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <p> <i class="fas fa-truck"></i> Giao hàng trong 2h   </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <P> <i class="fas fa-check-circle"></i> Sản phẩm chính hãng 100%</P>
+            </div>
+            
+        </div>
+        
+            
+        <div class="row footer">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <a href="#"><img src="../../images/Logo.png" alt=""></a>
+                <div>
+                    <a href="#" class="fa fa-facebook fa-lg social"></a>
+                    <a href="#" class="fa fa-twitter fa-lg social"></a>
+                    <a href="#" class="fa fa-google fa-lg social"></a>
+                    <a href="#" class="fa fa-linkedin fa-lg social"></a>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <p>Nhập địa chỉ Email để nhận thông tin sớm nhất</p>
+                <div>
+                    <input class="input_email" type="text" placeholder="example@gmail.com">
+                    <button class="submit_email" type="submit">Gửi</button>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contact text-center">
+                <p>LIÊN HỆ</p>
+                <P><i class="fas fa-phone"></i>  0966886181</P>
+                <p><i class="fas fa-map-marker"></i>  42 Nguyễn Khánh Toàn, Cầu Giấy, Hà Nội</p>
+                <p><i class="fas fa-envelope"></i>  contact@itbooks.com</p>
+            </div>                    
+            
+        </div>
+            
+
+        <div class="row copyright">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p><p>© 2018 ITBooks All Rights Reserved</p></p>
+            </div>
+        </div>
+
+    </div>        
+
+
+    <!-- FOOTER CONTAINER (ABOVE) -->
+            
+
+
+
+    
+    <script src="../../other source/jquery-3.2.1.min.js"></script>
+    <script src="../../other source/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../../js/admin.js"></script>
+
+
+</body>
+</html>
