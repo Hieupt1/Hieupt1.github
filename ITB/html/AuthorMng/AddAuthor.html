@@ -140,7 +140,7 @@
                             <label for="title">Tên tác giả (Author Name)</label>
                         </div>   
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <input type="text" id="Title"> <br>
+                            <input type="text" id="Title" name="AuthorName"> <br>
                         </div>
 
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -150,7 +150,7 @@
                     <!-- sammury -->
                     <div class="row">  
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <label for="Summary">Tiểu sử (History) </label> 
+                            <label for="Summary" name="Summary">Tiểu sử (History) </label> 
                         </div>   
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <textarea id="Summary" rows="2" cols="32">
@@ -163,7 +163,16 @@
                     </div>
 
                     <!-- Add Button -->
-                    <button class="addAuthor" type="button">Thêm Tác giả </button>
+
+                    <div class="row">
+                        
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 ">
+                            
+                            <button class="addAuthor" type="button">Thêm Tác giả </button>
+
+                        </div>                   
+
+                    </div>        
                     
                 </form>
 
