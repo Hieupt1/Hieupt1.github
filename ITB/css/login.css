@@ -246,9 +246,10 @@
     border: 0.5px solid #ccc;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding-bottom: 30px;
+    padding:25px 40px !important;
     background: #f2f2f2;
     text-align: center;
+    border-radius: 5px;
 }
 
 .login label {
@@ -273,6 +274,11 @@
 
 .login button:hover {
     background: green;
+}
+
+.login p {
+    font-size: 14px;
+    padding: 20px 10px 10px 10px;
 }
 
 
